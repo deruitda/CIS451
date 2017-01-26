@@ -1,0 +1,10 @@
+#> InputSetLoader: gvFormat.InputSetLoaderSimpleGVFormat
+BEGIN test1
+    INPUTS
+      InputA [1000, 2000]
+      InputB [4000, 1000]
+      CarryIn [0,1]
+    OUTPUTS
+      Output [5000, 5001, 2000, 2001, 6000, 6001, 3000, 3001]
+      CarryOut [0,0,0,0,0,0,0,0]
+

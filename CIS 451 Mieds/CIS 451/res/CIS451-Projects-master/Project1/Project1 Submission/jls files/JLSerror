@@ -1,0 +1,403 @@
+Please email this file to pop@mtu.edu
+along with a short description of what
+you were doing when the error occured.
+Thanks.
+JLS 4.1.4 <p>[built on April 1, 2013 at 3:30 PM]
+-- listing properties --
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=C:\Program Files\Java\jre1.8.0_25\bin
+java.vm.version=25.25-b02
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.script=
+user.country=US
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=C:\Users\dgsel_000\Documents\School W...
+java.runtime.version=1.8.0_25-b18
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=C:\Program Files\Java\jre1.8.0_25\lib...
+os.arch=amd64
+java.io.tmpdir=C:\Users\DGSEL_~1\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+user.variant=
+os.name=Windows 8.1
+sun.jnu.encoding=Cp1252
+java.library.path=C:\Program Files\Java\jre1.8.0_25\bin...
+sun.awt.enableExtraMouseButtons=true
+java.specification.name=Java Platform API Specification
+java.class.version=52.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.3
+user.home=C:\Users\dgsel_000
+user.timezone=America/New_York
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=Cp1252
+java.specification.version=1.8
+user.name=dgsel_000
+java.class.path=C:\Users\dgsel_000\Documents\School W...
+java.vm.specification.version=1.8
+sun.arch.data.model=64
+java.home=C:\Program Files\Java\jre1.8.0_25
+sun.java.command=C:\Users\dgsel_000\Documents\School W...
+java.specification.vendor=Oracle Corporation
+user.language=en
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.8.0_25
+java.ext.dirs=C:\Program Files\Java\jre1.8.0_25\lib...
+sun.boot.class.path=C:\Program Files\Java\jre1.8.0_25\lib...
+java.vendor=Oracle Corporation
+file.separator=\
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.cpu.endian=little
+sun.io.unicode.encoding=UnicodeLittle
+sun.desktop=windows
+sun.cpu.isalist=amd64
+java.lang.NullPointerException
+	at edu.mtu.cs.jls.edit.SimpleEditor$EditWindow.actionPerformed(SimpleEditor.java:1406)
+	at javax.swing.AbstractButton.fireActionPerformed(Unknown Source)
+	at javax.swing.AbstractButton$Handler.actionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(Unknown Source)
+	at javax.swing.DefaultButtonModel.setPressed(Unknown Source)
+	at javax.swing.AbstractButton.doClick(Unknown Source)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(Unknown Source)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(Unknown Source)
+	at java.awt.Component.processMouseEvent(Unknown Source)
+	at javax.swing.JComponent.processMouseEvent(Unknown Source)
+	at java.awt.Component.processEvent(Unknown Source)
+	at java.awt.Container.processEvent(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$400(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+CIRCUIT Cx_ny
+ELEMENT WireEnd
+ int id 0
+ int x 144
+ int y 132
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 35
+ ref wire 31
+END
+ELEMENT WireEnd
+ int id 1
+ int x 144
+ int y 180
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 18
+ ref wire 4
+END
+ELEMENT WireEnd
+ int id 2
+ int x 132
+ int y 204
+ int width 6
+ int height 6
+ ref wire 34
+ ref wire 14
+END
+ELEMENT OutputPin
+ int id 3
+ int x 192
+ int y 120
+ int width 36
+ int height 24
+ String name "Pij"
+ int bits 1
+ int watch 0
+ String orient "RIGHT"
+END
+ELEMENT WireEnd
+ int id 4
+ int x 144
+ int y 180
+ int width 6
+ int height 6
+ String put "input0"
+ ref attach 24
+ ref wire 1
+END
+ELEMENT WireEnd
+ int id 7
+ int x 72
+ int y 144
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 10
+ ref wire 30
+END
+ELEMENT WireEnd
+ int id 8
+ int x 72
+ int y 120
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 13
+ ref wire 40
+END
+ELEMENT Text
+ int id 9
+ int x 32
+ int y 7
+ int width 144
+ int height 96
+ String text "Cy_ny.jls\nDanny Selgo, Katie Mulder\nProject 1\n9/21/15\n\nUsed to compute Cy_Ny"
+ String fn "Dialog"
+ int fs 12
+ int bold 0
+ int ital 0
+ int color -16777216
+END
+ELEMENT InputPin
+ int id 10
+ int x 36
+ int y 132
+ int width 36
+ int height 24
+ String name "Pk"
+ int bits 1
+ int watch 0
+ String orient "RIGHT"
+END
+ELEMENT WireEnd
+ int id 11
+ int x 96
+ int y 192
+ int width 6
+ int height 6
+ String put "input1"
+ ref attach 18
+ ref wire 36
+END
+ELEMENT OutputPin
+ int id 12
+ int x 192
+ int y 180
+ int width 36
+ int height 24
+ String name "Gij"
+ int bits 1
+ int watch 0
+ String orient "RIGHT"
+END
+ELEMENT InputPin
+ int id 13
+ int x 36
+ int y 108
+ int width 36
+ int height 24
+ String name "Pi"
+ int bits 1
+ int watch 0
+ String orient "RIGHT"
+END
+ELEMENT WireEnd
+ int id 14
+ int x 132
+ int y 216
+ int width 6
+ int height 6
+ ref wire 33
+ ref wire 2
+END
+ELEMENT WireEnd
+ int id 15
+ int x 84
+ int y 168
+ int width 6
+ int height 6
+ ref wire 39
+ ref wire 40
+END
+ELEMENT WireEnd
+ int id 17
+ int x 96
+ int y 120
+ int width 6
+ int height 6
+ String put "input0"
+ ref attach 35
+ ref wire 40
+END
+ELEMENT AndGate
+ int id 18
+ int x 96
+ int y 168
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 2
+ String orientation "right"
+ int delay 10
+END
+ELEMENT InputPin
+ int id 19
+ int x 36
+ int y 204
+ int width 36
+ int height 24
+ String name "Gi"
+ int bits 1
+ int watch 0
+ String orient "RIGHT"
+END
+ELEMENT InputPin
+ int id 23
+ int x 36
+ int y 180
+ int width 36
+ int height 24
+ String name "Gk"
+ int bits 1
+ int watch 0
+ String orient "RIGHT"
+END
+ELEMENT OrGate
+ int id 24
+ int x 144
+ int y 180
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 2
+ String orientation "right"
+ int delay 10
+END
+ELEMENT WireEnd
+ int id 28
+ int x 192
+ int y 192
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 12
+ ref wire 29
+END
+ELEMENT WireEnd
+ int id 29
+ int x 192
+ int y 192
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 24
+ ref wire 28
+END
+ELEMENT WireEnd
+ int id 30
+ int x 96
+ int y 144
+ int width 6
+ int height 6
+ String put "input1"
+ ref attach 35
+ ref wire 7
+END
+ELEMENT WireEnd
+ int id 31
+ int x 192
+ int y 132
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 3
+ ref wire 0
+END
+ELEMENT WireEnd
+ int id 33
+ int x 72
+ int y 216
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 19
+ ref wire 14
+END
+ELEMENT WireEnd
+ int id 34
+ int x 144
+ int y 204
+ int width 6
+ int height 6
+ String put "input1"
+ ref attach 24
+ ref wire 2
+END
+ELEMENT AndGate
+ int id 35
+ int x 96
+ int y 120
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 2
+ String orientation "right"
+ int delay 10
+END
+ELEMENT WireEnd
+ int id 36
+ int x 72
+ int y 192
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 23
+ ref wire 11
+END
+ELEMENT WireEnd
+ int id 39
+ int x 96
+ int y 168
+ int width 6
+ int height 6
+ String put "input0"
+ ref attach 18
+ ref wire 15
+END
+ELEMENT WireEnd
+ int id 40
+ int x 84
+ int y 120
+ int width 6
+ int height 6
+ ref wire 17
+ ref wire 15
+ ref wire 8
+END
+ENDCIRCUIT

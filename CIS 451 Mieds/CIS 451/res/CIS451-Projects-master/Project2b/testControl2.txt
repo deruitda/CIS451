@@ -1,0 +1,520 @@
+BEGIN add
+  INPUTS
+    OpCode 0 
+    FuncCode 32
+  OUTPUTS
+  	ALUop 0
+  	RegDest 1
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 0
+    signExt EXCLUDE
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN addu
+  INPUTS
+    OpCode 0 
+    FuncCode 33
+  OUTPUTS
+    ALUop 0
+    RegDest 1
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 0
+    signExt EXCLUDE
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN sub
+  INPUTS
+    OpCode 0 
+    FuncCode 34
+  OUTPUTS
+    ALUop 1
+    RegDest 1
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 0
+    signExt EXCLUDE
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN subu
+  INPUTS
+    OpCode 0 
+    FuncCode 35
+  OUTPUTS
+    ALUop 1
+    RegDest 1
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 0
+    signExt EXCLUDE
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN and
+  INPUTS
+    OpCode 0 
+    FuncCode 36
+  OUTPUTS
+    ALUop 2
+    RegDest 1
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 0
+    signExt EXCLUDE
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN or
+  INPUTS
+    OpCode 0 
+    FuncCode 37
+  OUTPUTS
+    ALUop 3
+    RegDest 1
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 0
+    signExt EXCLUDE
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+    
+BEGIN xor
+  INPUTS
+    OpCode 0 
+    FuncCode 38
+  OUTPUTS
+    ALUop 5
+    RegDest 1
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 0
+    signExt EXCLUDE
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN nor
+  INPUTS
+    OpCode 0 
+    FuncCode 39
+  OUTPUTS
+    ALUop 4
+    RegDest 1
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 0
+    signExt EXCLUDE
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN slt
+  INPUTS
+    OpCode 0 
+    FuncCode 42
+  OUTPUTS
+    ALUop 15
+    RegDest 1
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 0
+    signExt EXCLUDE
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN sltu
+  INPUTS
+    OpCode 0 
+    FuncCode 43
+  OUTPUTS
+    ALUop 7
+    RegDest 1
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 0
+    signExt EXCLUDE
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN jr
+  INPUTS
+    OpCode 0 
+    FuncCode 8
+  OUTPUTS
+    ALUop EXCLUDE
+    RegDest EXCLUDE
+  	RegWrite 0
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg EXCLUDE
+  	ALUsrc EXCLUDE
+    signExt EXCLUDE
+    Branch EXCLUDE
+    Jump EXCLUDE 
+    jal EXCLUDE
+    jr 1
+    bne EXCLUDE
+    Halt 0
+
+BEGIN addi
+  INPUTS
+    OpCode 8 
+    FuncCode 0
+  OUTPUTS
+    ALUop 0
+    RegDest 0
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 1
+    signExt 1
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN addiu
+  INPUTS
+    OpCode 9 
+    FuncCode 0
+  OUTPUTS
+    ALUop 0
+    RegDest 0
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 1
+    signExt 1
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN slti
+  INPUTS
+    OpCode 10 
+    FuncCode 0
+  OUTPUTS
+    ALUop 15
+    RegDest 0
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 1
+    signExt 1
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+    
+BEGIN sltiu
+  INPUTS
+    OpCode 11 
+    FuncCode 0
+  OUTPUTS
+    ALUop 7
+    RegDest 0
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 1
+    signExt 1
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN andi
+  INPUTS
+    OpCode 12 
+    FuncCode 0
+  OUTPUTS
+    ALUop 2
+    RegDest 0
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 1
+    signExt 0
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN ori
+  INPUTS
+    OpCode 13 
+    FuncCode 0
+  OUTPUTS
+    ALUop 3
+    RegDest 0
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 1
+    signExt 0
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN xori
+  INPUTS
+    OpCode 14 
+    FuncCode 0
+  OUTPUTS
+    ALUop 5
+    RegDest 0
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 1
+    signExt 0
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN lui
+  INPUTS
+    OpCode 15 
+    FuncCode 0
+  OUTPUTS
+    ALUop 6
+    RegDest 0
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg 0
+  	ALUsrc 1
+    signExt 1
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN beq
+  INPUTS
+    OpCode 4 
+    FuncCode 0
+  OUTPUTS
+    ALUop 1
+    RegDest EXCLUDE
+  	RegWrite 0
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg EXCLUDE
+  	ALUsrc 0
+    signExt 1
+    Branch 1
+    Jump 0 
+    jal EXCLUDE
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN bne
+  INPUTS
+    OpCode 5 
+    FuncCode 0
+  OUTPUTS
+    ALUop 1
+    RegDest EXCLUDE
+  	RegWrite 0
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg EXCLUDE
+  	ALUsrc 0
+    signExt 1
+    Branch 1
+    Jump 0 
+    jal EXCLUDE
+    jr 0
+    bne 1
+    Halt 0
+
+BEGIN lw
+  INPUTS
+    OpCode 35 
+    FuncCode 0
+  OUTPUTS
+    ALUop 0
+    RegDest 0
+  	RegWrite 1
+  	MemRead 1
+  	MemWrite 0
+  	MemToReg 1
+  	ALUsrc 1
+    signExt 1
+    Branch 0
+    Jump 0 
+    jal 0
+    jr 0
+    bne 0
+    Halt 0
+    
+BEGIN sw
+  INPUTS
+    OpCode 43 
+    FuncCode 0
+  OUTPUTS
+    ALUop 0
+    RegDest EXCLUDE
+  	RegWrite 0
+  	MemRead EXCLUDE
+  	MemWrite 1
+  	MemToReg EXCLUDE
+  	ALUsrc 1
+    signExt 1
+    Branch 0
+    Jump 0 
+    jal EXCLUDE
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN j
+  INPUTS
+    OpCode 2 
+    FuncCode 0
+  OUTPUTS
+    ALUop EXCLUDE
+    RegDest EXCLUDE
+  	RegWrite 0
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg EXCLUDE
+  	ALUsrc EXCLUDE
+    signExt 1
+    Branch EXCLUDE
+    Jump 1 
+    jal EXCLUDE
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN jal
+  INPUTS
+    OpCode 3 
+    FuncCode 0
+  OUTPUTS
+    ALUop EXCLUDE
+    RegDest EXCLUDE
+  	RegWrite 1
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg EXCLUDE
+  	ALUsrc EXCLUDE
+    signExt 1
+    Branch EXCLUDE
+    Jump 1 
+    jal 1
+    jr 0
+    bne 0
+    Halt 0
+
+BEGIN Halt
+  INPUTS
+    OpCode 32 
+    FuncCode 0
+  OUTPUTS
+    ALUop EXCLUDE
+    RegDest EXCLUDE
+  	RegWrite 0
+  	MemRead EXCLUDE
+  	MemWrite 0
+  	MemToReg EXCLUDE
+  	ALUsrc EXCLUDE
+    signExt EXCLUDE
+    Branch EXCLUDE
+    Jump EXCLUDE 
+    jal EXCLUDE
+    jr EXCLUDE
+    bne EXCLUDE
+    Halt 1
+

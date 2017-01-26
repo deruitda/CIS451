@@ -1,0 +1,27 @@
+
+NAMED_VALUE_LISTS
+	fCodes [0x0, 0x1, 0x4, 0x20, 0x24, 0x27, 0x25, 0x2a, 0x22]
+
+
+BEGIN beq
+  INPUTS
+    OpCode	0x4
+    functionCode fCodes
+  OUTPUTS
+    Branch	1
+    ALUop	1
+    MemWrite	0
+    ALUsrc	0
+    RegWrite	0
+    Jump	0
+    Halt	0
+
+
+BEGIN halt
+  INPUTS
+    OpCode 0x20
+    functionCode fCodes
+  OUTPUTS
+    Halt 1
+    MemWrite 0
+    RegWrite 0   

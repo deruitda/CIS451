@@ -1,0 +1,406 @@
+Please email this file to pop@mtu.edu
+along with a short description of what
+you were doing when the error occured.
+Thanks.
+JLS 4.1.4 <p>[built on April 1, 2013 at 3:30 PM]
+-- listing properties --
+java.runtime.name=OpenJDK Runtime Environment
+sun.boot.library.path=/usr/lib/jvm/java-7-openjdk-amd64/jre...
+java.vm.version=24.65-b04
+java.vm.vendor=Oracle Corporation
+java.vendor.url=http://java.oracle.com/
+path.separator=:
+java.vm.name=OpenJDK 64-Bit Server VM
+file.encoding.pkg=sun.io
+user.country=CA
+sun.java.launcher=SUN_STANDARD
+sun.os.patch.level=unknown
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=/home/john/Documents/CIS451-JLS-ALU
+java.runtime.version=1.7.0_65-b32
+java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+java.endorsed.dirs=/usr/lib/jvm/java-7-openjdk-amd64/jre...
+os.arch=amd64
+java.io.tmpdir=/tmp
+line.separator=
+
+java.vm.specification.vendor=Oracle Corporation
+os.name=Linux
+sun.jnu.encoding=UTF-8
+java.library.path=/usr/java/packages/lib/amd64:/usr/lib...
+sun.awt.enableExtraMouseButtons=true
+java.specification.name=Java Platform API Specification
+java.class.version=51.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=3.13.0-37-generic
+user.home=/home/john
+user.timezone=America/Toronto
+java.awt.printerjob=sun.print.PSPrinterJob
+file.encoding=UTF-8
+java.specification.version=1.7
+user.name=john
+java.class.path=JLS.jar
+java.vm.specification.version=1.7
+sun.arch.data.model=64
+java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre
+sun.java.command=JLS.jar
+java.specification.vendor=Oracle Corporation
+user.language=en
+awt.toolkit=sun.awt.X11.XToolkit
+java.vm.info=mixed mode
+java.version=1.7.0_65
+java.ext.dirs=/usr/lib/jvm/java-7-openjdk-amd64/jre...
+sun.boot.class.path=/usr/lib/jvm/java-7-openjdk-amd64/jre...
+java.vendor=Oracle Corporation
+file.separator=/
+java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+sun.cpu.endian=little
+sun.io.unicode.encoding=UnicodeLittle
+sun.font.fontmanager=sun.awt.X11FontManager
+sun.desktop=gnome
+sun.cpu.isalist=
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at edu.mtu.cs.jls.elem.bool.Display.doLayout(Display.java:115)
+	at edu.mtu.cs.jls.elem.bool.TruthTable.addInput(TruthTable.java:733)
+	at edu.mtu.cs.jls.elem.bool.TruthTable$TTEditor.actionPerformed(TruthTable.java:664)
+	at javax.swing.JTextField.fireActionPerformed(JTextField.java:508)
+	at javax.swing.JTextField.postActionEvent(JTextField.java:721)
+	at javax.swing.JTextField$NotifyAction.actionPerformed(JTextField.java:836)
+	at javax.swing.SwingUtilities.notifyAction(SwingUtilities.java:1662)
+	at javax.swing.JComponent.processKeyBinding(JComponent.java:2869)
+	at javax.swing.JComponent.processKeyBindings(JComponent.java:2916)
+	at javax.swing.JComponent.processKeyEvent(JComponent.java:2832)
+	at java.awt.Component.processEvent(Component.java:6293)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1887)
+	at java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(DefaultKeyboardFocusManager.java:762)
+	at java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(DefaultKeyboardFocusManager.java:1027)
+	at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:899)
+	at java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:727)
+	at java.awt.Component.dispatchEventImpl(Component.java:4742)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:154)
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:182)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:221)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:219)
+	at java.awt.Dialog.show(Dialog.java:1082)
+	at java.awt.Component.show(Component.java:1655)
+	at java.awt.Component.setVisible(Component.java:1607)
+	at java.awt.Window.setVisible(Window.java:1014)
+	at java.awt.Dialog.setVisible(Dialog.java:1005)
+	at edu.mtu.cs.jls.elem.bool.TruthTable$TTEditor.<init>(TruthTable.java:620)
+	at edu.mtu.cs.jls.elem.bool.TruthTable.setup(TruthTable.java:73)
+	at edu.mtu.cs.jls.edit.SimpleEditor$EditWindow.setup(SimpleEditor.java:3558)
+	at edu.mtu.cs.jls.edit.SimpleEditor$EditWindow.access$24(SimpleEditor.java:3517)
+	at edu.mtu.cs.jls.edit.SimpleEditor$EditWindow$43.actionPerformed(SimpleEditor.java:1028)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2018)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2341)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:289)
+	at java.awt.Component.processMouseEvent(Component.java:6516)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3311)
+	at java.awt.Component.processEvent(Component.java:6281)
+	at java.awt.Container.processEvent(Container.java:2229)
+	at java.awt.Component.dispatchEventImpl(Component.java:4872)
+	at java.awt.Container.dispatchEventImpl(Container.java:2287)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4832)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4492)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4422)
+	at java.awt.Container.dispatchEventImpl(Container.java:2273)
+	at java.awt.Window.dispatchEventImpl(Window.java:2719)
+	at java.awt.Component.dispatchEvent(Component.java:4698)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:735)
+	at java.awt.EventQueue.access$200(EventQueue.java:103)
+	at java.awt.EventQueue$3.run(EventQueue.java:694)
+	at java.awt.EventQueue$3.run(EventQueue.java:692)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.awt.EventQueue$4.run(EventQueue.java:708)
+	at java.awt.EventQueue$4.run(EventQueue.java:706)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$1.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:705)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:242)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:150)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:146)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:138)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:91)
+CIRCUIT HalfAdder
+ELEMENT XorGate
+ int id 0
+ int x 252
+ int y 84
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 2
+ String orientation "right"
+ int delay 10
+END
+ELEMENT WireEnd
+ int id 1
+ int x 144
+ int y 180
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 34
+ ref wire 23
+END
+ELEMENT WireEnd
+ int id 2
+ int x 300
+ int y 192
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 4
+ ref wire 26
+END
+ELEMENT AndGate
+ int id 4
+ int x 252
+ int y 180
+ int width 48
+ int height 24
+ int bits 1
+ int numInputs 2
+ String orientation "right"
+ int delay 10
+END
+ELEMENT Text
+ int id 5
+ int x 435
+ int y 22
+ int width 131
+ int height 75
+ String text "Name:    John Tunisi\n             Scott Bell\nFile:       HalfAdder.jls\nDate:     1/26/15\nProject: ALU Project"
+ String fn "Dialog"
+ int fs 12
+ int bold 0
+ int ital 0
+ int color -16777216
+END
+ELEMENT WireEnd
+ int id 6
+ int x 192
+ int y 180
+ int width 6
+ int height 6
+ ref wire 12
+ ref wire 22
+END
+ELEMENT WireEnd
+ int id 7
+ int x 252
+ int y 108
+ int width 6
+ int height 6
+ String put "input1"
+ ref attach 0
+ ref wire 14
+END
+ELEMENT Text
+ int id 9
+ int x 410
+ int y 134
+ int width 76
+ int height 90
+ String text " A | B | S | C\n-------------------\n 0 | 0 | 0 | 0\n 0 | 1 | 1 | 0\n 1 | 0 | 1 | 0\n 1 | 1 | 0 | 1"
+ String fn "Dialog"
+ int fs 12
+ int bold 0
+ int ital 0
+ int color -16777216
+END
+ELEMENT WireEnd
+ int id 12
+ int x 192
+ int y 84
+ int width 6
+ int height 6
+ ref wire 6
+ ref wire 19
+ ref wire 18
+END
+ELEMENT WireEnd
+ int id 14
+ int x 180
+ int y 108
+ int width 6
+ int height 6
+ ref wire 7
+ ref wire 23
+END
+ELEMENT OutputPin
+ int id 15
+ int x 312
+ int y 84
+ int width 48
+ int height 24
+ String name "Sum"
+ int bits 1
+ int watch 0
+ String orient "RIGHT"
+END
+ELEMENT WireEnd
+ int id 16
+ int x 252
+ int y 204
+ int width 6
+ int height 6
+ String put "input1"
+ ref attach 4
+ ref wire 27
+END
+ELEMENT WireEnd
+ int id 17
+ int x 300
+ int y 96
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 0
+ ref wire 21
+END
+ELEMENT WireEnd
+ int id 18
+ int x 252
+ int y 84
+ int width 6
+ int height 6
+ String put "input0"
+ ref attach 0
+ ref wire 12
+END
+ELEMENT WireEnd
+ int id 19
+ int x 144
+ int y 84
+ int width 6
+ int height 6
+ String put "output"
+ ref attach 33
+ ref wire 12
+END
+ELEMENT WireEnd
+ int id 21
+ int x 312
+ int y 96
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 15
+ ref wire 17
+END
+ELEMENT WireEnd
+ int id 22
+ int x 252
+ int y 180
+ int width 6
+ int height 6
+ String put "input0"
+ ref attach 4
+ ref wire 6
+END
+ELEMENT WireEnd
+ int id 23
+ int x 180
+ int y 180
+ int width 6
+ int height 6
+ ref wire 27
+ ref wire 1
+ ref wire 14
+END
+ELEMENT Text
+ int id 25
+ int x 114
+ int y 16
+ int width 230
+ int height 30
+ String text "Gates used (including subcircuits): 2\nCritical Path: 10 units"
+ String fn "Dialog"
+ int fs 12
+ int bold 0
+ int ital 0
+ int color -16777216
+END
+ELEMENT WireEnd
+ int id 26
+ int x 312
+ int y 192
+ int width 6
+ int height 6
+ String put "input"
+ ref attach 30
+ ref wire 2
+END
+ELEMENT WireEnd
+ int id 27
+ int x 180
+ int y 204
+ int width 6
+ int height 6
+ ref wire 23
+ ref wire 16
+END
+ELEMENT OutputPin
+ int id 30
+ int x 312
+ int y 180
+ int width 48
+ int height 24
+ String name "Carry"
+ int bits 1
+ int watch 0
+ String orient "RIGHT"
+END
+ELEMENT InputPin
+ int id 33
+ int x 108
+ int y 72
+ int width 36
+ int height 24
+ String name "A"
+ int bits 1
+ int watch 0
+ String orient "RIGHT"
+END
+ELEMENT InputPin
+ int id 34
+ int x 108
+ int y 168
+ int width 36
+ int height 24
+ String name "B"
+ int bits 1
+ int watch 0
+ String orient "RIGHT"
+END
+ENDCIRCUIT

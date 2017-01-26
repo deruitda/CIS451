@@ -1,0 +1,31 @@
+# Name of java class that computs the correct answer
+OUTPUT_SET_TYPE SHARED UnsignedAdderOutputSet  
+
+NAMED_VALUE_LISTS
+  # The sum of any two smallPositive integers (or sum of any two
+  # plus a carryIn of 1) will not cause an overflow.
+  smallPositive [ 0, 1, 2^15 - 1,2,3,4,5,6,7,8,9,10,60,70,80 ]
+  allPositive   [ smallPositive, 2^16 - 2, 2^16 -1 ]
+
+BEGIN no_overflow
+  INPUTS
+    InputA smallPositive
+    InputB smallPositive
+    CarryIn [ 0, 1 ]
+  OUTPUTS
+    # Tell JLSCircuitTester to ignore value of CarryOut output pin
+    CarryOut EXCLUDE 
+
+BEGIN overflow
+  INPUTS
+    InputA allPositive
+    InputB allPositive
+    CarryIn [0, 1]
+  OUTPUTS   
+    CarryOut REQUIRE  
+
+
+
+
+
+

@@ -1,0 +1,182 @@
+BEGIN add
+  INPUTS
+    OpCode 0 
+    FuncCode 32
+  OUTPUTS
+    ALUop 0
+
+BEGIN addu
+  INPUTS
+    OpCode 0 
+    FuncCode 33
+  OUTPUTS
+    ALUop 0
+
+BEGIN sub
+  INPUTS
+    OpCode 0 
+    FuncCode 34
+  OUTPUTS
+    ALUop 1
+
+BEGIN subu
+  INPUTS
+    OpCode 0 
+    FuncCode 35
+  OUTPUTS
+    ALUop 1
+
+BEGIN and
+  INPUTS
+    OpCode 0 
+    FuncCode 36
+  OUTPUTS
+    ALUop 2
+
+BEGIN or
+  INPUTS
+    OpCode 0 
+    FuncCode 37
+  OUTPUTS
+    ALUop 3
+    
+BEGIN xor
+  INPUTS
+    OpCode 0 
+    FuncCode 38
+  OUTPUTS
+    ALUop 5
+
+BEGIN nor
+  INPUTS
+    OpCode 0 
+    FuncCode 39
+  OUTPUTS
+    ALUop 4
+
+BEGIN slt
+  INPUTS
+    OpCode 0 
+    FuncCode 42
+  OUTPUTS
+    ALUop 15
+
+BEGIN sltu
+  INPUTS
+    OpCode 0 
+    FuncCode 43
+  OUTPUTS
+    ALUop 7
+
+BEGIN jr
+  INPUTS
+    OpCode 0 
+    FuncCode 8
+  OUTPUTS
+    ALUop 0
+
+BEGIN addi
+  INPUTS
+    OpCode 8 
+    FuncCode 0
+  OUTPUTS
+    ALUop 0
+
+BEGIN addiu
+  INPUTS
+    OpCode 9 
+    FuncCode 0
+  OUTPUTS
+    ALUop 0
+
+BEGIN slti
+  INPUTS
+    OpCode 10 
+    FuncCode 0
+  OUTPUTS
+    ALUop 15
+    
+BEGIN sltiu
+  INPUTS
+    OpCode 11 
+    FuncCode 0
+  OUTPUTS
+    ALUop 7
+
+BEGIN andi
+  INPUTS
+    OpCode 12 
+    FuncCode 0
+  OUTPUTS
+    ALUop 2
+
+BEGIN ori
+  INPUTS
+    OpCode 13 
+    FuncCode 0
+  OUTPUTS
+    ALUop 3
+
+BEGIN xori
+  INPUTS
+    OpCode 14 
+    FuncCode 0
+  OUTPUTS
+    ALUop 5
+
+BEGIN lui
+  INPUTS
+    OpCode 15 
+    FuncCode 0
+  OUTPUTS
+    ALUop 6
+
+BEGIN beq
+  INPUTS
+    OpCode 4 
+    FuncCode 0
+  OUTPUTS
+    ALUop 1
+
+BEGIN bne
+  INPUTS
+    OpCode 5 
+    FuncCode 0
+  OUTPUTS
+    ALUop 1
+
+BEGIN lw
+  INPUTS
+    OpCode 35 
+    FuncCode 0
+  OUTPUTS
+    ALUop 0
+    
+BEGIN sw
+  INPUTS
+    OpCode 43 
+    FuncCode 0
+  OUTPUTS
+    ALUop 0
+
+BEGIN j
+  INPUTS
+    OpCode 2 
+    FuncCode 0
+  OUTPUTS
+    ALUop 0
+
+BEGIN jal
+  INPUTS
+    OpCode 3 
+    FuncCode 0
+  OUTPUTS
+    ALUop 0
+
+BEGIN halt
+  INPUTS
+    OpCode 32 
+    FuncCode 0
+  OUTPUTS
+    ALUop 0
+
