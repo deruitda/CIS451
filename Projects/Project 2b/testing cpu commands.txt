@@ -1,0 +1,5 @@
+jlsCPUTester needs to be in your current directory along with the test file and circuit***
+
+./jlsCPUTester PHSingleCycleCPU.jls basicTest.a;
+./jlsCPUTester PHSingleCycleCPU.jls basicLoadStoreTest.a;
+./jlsCPUTester PHSingleCycleCPU.jls basicOpsDemoTest.a; #fails;
