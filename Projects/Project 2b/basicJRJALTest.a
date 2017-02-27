@@ -1,0 +1,17 @@
+.data
+
+.text
+.global main #necessary for the assembler
+
+main: jal message
+      addi $10, $31, 0
+      jal message
+      addi $11, $31, 0
+      j END
+
+message:
+      addi $12, $12, 1
+      addi $13, $31, 0
+      jr $31
+
+END:

@@ -205,7 +205,7 @@ public class ControlTests {
 	Assert.assertEquals("BEQ: MemToReg", false, readPin("MemToReg"));
 	Assert.assertEquals("BEQ: ALUop", 1, readPinUnsigned("ALUop"));
     Assert.assertEquals("BEQ: MemWrite", false, readPin("MemWrite"));
-	Assert.assertEquals("BEQ: ALUsrc",   true, readPin("ALUsrc"));
+	Assert.assertEquals("BEQ: ALUsrc",   false, readPin("ALUsrc"));
 	Assert.assertEquals("BEQ: RegWrite", false, readPin("RegWrite"));
 	Assert.assertEquals("BEQ: Jump",     false, readPin("Jump"));
 	Assert.assertEquals("BEQ: jal",      false, readPin("jal"));
@@ -226,7 +226,7 @@ public class ControlTests {
 	Assert.assertEquals("BNE: MemToReg", false, readPin("MemToReg"));
 	Assert.assertEquals("BNE: ALUop", 1, readPinUnsigned("ALUop"));
     Assert.assertEquals("BNE: MemWrite", false, readPin("MemWrite"));
-	Assert.assertEquals("BNE: ALUsrc",   true, readPin("ALUsrc"));
+	Assert.assertEquals("BNE: ALUsrc",   false, readPin("ALUsrc"));
 	Assert.assertEquals("BNE: RegWrite", false, readPin("RegWrite"));
 	Assert.assertEquals("BNE: Jump",     false, readPin("Jump"));
 	Assert.assertEquals("BNE: jal",      false, readPin("jal"));
@@ -290,7 +290,7 @@ public class ControlTests {
 	Assert.assertEquals("JAL: ALUop", 0, readPinUnsigned("ALUop"));
     Assert.assertEquals("JAL: MemWrite", false, readPin("MemWrite"));
 	Assert.assertEquals("JAL: ALUsrc",   true, readPin("ALUsrc"));
-	Assert.assertEquals("JAL: RegWrite", false, readPin("RegWrite"));
+	Assert.assertEquals("JAL: RegWrite", true, readPin("RegWrite"));
 	Assert.assertEquals("JAL: Jump",     false, readPin("Jump"));
 	Assert.assertEquals("JAL: jal",      true, readPin("jal"));
 	Assert.assertEquals("JAL: jr",       false, readPin("jr"));

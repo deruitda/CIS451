@@ -1,0 +1,40 @@
+############################################################################
+# 
+# A simple demonstration of I/J/R type instructions.
+#
+# When constructing a complete test suite, be sure to
+# 
+# (1) Test all operations
+# (2) Test operations with several different inputs. 
+# (3) Choose inputs carefully.  For example, suppose you switched
+#     control wires so that addi instructions actually executed as ori
+#     instructions.  The line addi "$3, $3, 0", will work correctly in
+#     spite of the mistake.
+#
+#Edited by James Jetton and Janelle Zuccaro
+#
+###########################################################################
+	.data
+val1:	.word 42
+val2:	.word 11
+val3:	.word 1
+	.text
+	.globl main
+main:
+addi $16, $16, 3     # $16 = 3
+addi $17, $16, 5     # $17 = 8
+add  $18, $16, $17   # $18 = 11
+mid:
+addi $19, $18, 1     # $19 = 12
+lui  $20, 0xFFFF     # $20 = 0xFFFF0000
+ori  $21, $20, 0x0000FFFF # $21 = 0xFFFFFFFF
+beq  $18, $19, after # $18 != $19, no branch
+lw   $22, val1       # $22 = val1 = 42
+lw   $23, val2	          # $23 = val2 = 11
+sw   $0, val2		       # val2 = 0
+beq  $18, $23, after # $18 == $23
+addi $18, $16, 1     # unreachable
+after:
+j end		     # jump to end
+addi $18, $18, 1     # unreahcable
+end:
